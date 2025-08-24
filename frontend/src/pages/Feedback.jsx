@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Layout from "../components/Layout";
 
 export default function Feedback() {
   const [formData, setFormData] = useState({
@@ -39,7 +40,7 @@ export default function Feedback() {
   };
 
   return (
-    <div className="p-6">
+    <Layout>
       <h1 className="text-2xl font-bold mb-6">Submit Feedback</h1>
       <form onSubmit={handleSubmit} className="bg-white p-6 shadow rounded-lg">
         <div className="mb-4">
@@ -97,6 +98,6 @@ export default function Feedback() {
           {loading ? "Submitting..." : "Submit"}
         </button>
       </form>
-    </div>
+    </Layout>
   );
 }

@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow-md border-b">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold text-blue-600">
+        <Link to="/dashboard" className="text-xl font-bold text-blue-600">
           FeedTrack
         </Link>
 
