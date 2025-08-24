@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Feedback from "./pages/Feedback";
 // import About from "./pages/About";
 // import Profile from "./pages/Profile";
 
@@ -26,6 +27,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/feedback"
+            element={
+              <ProtectedRoute>
+                <Feedback />
               </ProtectedRoute>
             }
           />
