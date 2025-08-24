@@ -11,8 +11,8 @@ export default function Sidebar() {
         <Link to="/feedback" className="block px-4 py-2 hover:bg-blue-700">
           Feedback Form
         </Link>
-        <Link to="/charts" className="block px-4 py-2 hover:bg-blue-700">
-          Charts
+        <Link to="/chatbot" className="block px-4 py-2 hover:bg-blue-700">
+          Chatbot
         </Link>
       </nav>
     </div>

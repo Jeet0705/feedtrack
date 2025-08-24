@@ -28,7 +28,17 @@ export default function Navbar() {
         <div className="flex items-center gap-6">
           {user ? (
             <>
-              <span className="text-gray-700 text-sm">Hello, {user.email}</span>
+              <div className="flex gap-4 text-sm">
+                <Link to="/dashboard" className="hover:text-blue-800">
+                  Dashboard
+                </Link>
+                <Link to="/feedback" className="hover:text-blue-800">
+                  Feedback
+                </Link>
+                <Link to="/chatbot" className="hover:text-blue-800">
+                  Chatbot
+                </Link>
+              </div>
               <button
                 onClick={handleSignOut}
                 className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm"

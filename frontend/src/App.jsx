@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Feedback from "./pages/Feedback";
+import Chatbot from "./pages/Chatbot";
 // import About from "./pages/About";
 // import Profile from "./pages/Profile";
 
@@ -35,6 +36,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Feedback />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/chatbot"
+            element={
+              <ProtectedRoute>
+                <Chatbot />
               </ProtectedRoute>
             }
           />
